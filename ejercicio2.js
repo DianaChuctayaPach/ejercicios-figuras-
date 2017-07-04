@@ -1,18 +1,11 @@
-function espacios(n) {
-  var s = "";
-  for (var i = 0; i < n; i++) s += " ";
-  return s;
-}
-function quiz1(n) {
-
-  }
-
+function quiz2(n) {
+  //var e = espacios(n);
   for (var i = 0; i < n; i++) {
       var s = "";
-      for (var j = 1; j >= n-i; j++) {
+      for (var j = i+1; j <= n; j++) {
         s += j;
       }
-      console.log( s);
+      console.log(s);
   }
-
-  quiz1(5);
+}
+quiz2(5);
